@@ -49,4 +49,33 @@ C:\Users\ITecnologia\Documents\gitlab\cursojiapaz>docker-compose exec app bash
 root@a52af4cbd1f1:/app# exit
 C:\Users\ITecnologia\Documents\gitlab\cursojiapaz>docker-compose down
 
+------------------------ day 2 --------------------
+pip freeze Checamos con este comando que el proyecto cuente con las dependencias necesarias para funcionar
+
+docker-compose up -d --build Reconstruye todo el proyecto completo, crea los servicios en funcion de las imagenes configuradas
+-d nos permite que se ejecute en segundo plano nuestro comando
+
+docker-compose exec app bash entra al contenedor de la app
+
+C:\Users\ITecnologia\Documents\gitlab\cursojiapaz\padron>docker-compose exec app bash
+root@d6fdd62ed328:/app# pip freeze
+asgiref==3.5.2
+Django==4.0.6
+mysqlclient==2.1.1
+sqlparse==0.4.2
+root@d6fdd62ed328:/app#
+
+
+El flujo para generar un nuevo modulo es
+url, view funcion, regresas a tu html
+
+
+
+
+
+
+
+
+
+
 
