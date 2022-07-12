@@ -65,6 +65,7 @@ mysqlclient==2.1.1
 sqlparse==0.4.2
 root@d6fdd62ed328:/app#
 
+> python3 manage.py runserver 0:8000
 
 El flujo para generar un nuevo modulo es
 url, view funcion, regresas a tu html
