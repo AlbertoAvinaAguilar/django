@@ -1,0 +1,33 @@
+version: '3.3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: siat
+    #restart: always para producion cuando se caiga o se reinicie el servidor
+    depends_on:
+      - db
+    ports:
+      - 8000:8000
+      - 8080:80 #utiliza el primero que le indicamos 
+    volumes: 
+       - ./siat:/app
+      #- media:/app/media
+
+  db:
+    image: mariadb
+    container_name: siat-db
+    #restart: always
+    environment:
+      MYSQL_DATABASE: siat
+      MYSQL_USER: siatuser
+      MYSQL_PASSWORD: "admin123"
+      MYSQL_ROOT_PASSWORD: admin1234 #acceso desde mi consola o servidor al root
+    volumes: #mantener persistencia para cuando el contenedor se apague o borre
+      - db:/var/lib/mysql
+    ports:
+      - 3310:3306 #mapear el puerto
+volumes:
+  db:  
