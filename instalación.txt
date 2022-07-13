@@ -1,0 +1,15 @@
+Una vez configurado nuestro proyecto los archivos de docker-compose y dockerfile
+ejecutamos el comando para realizar la instalcion de todas las dependencias necesarias
+
+1. docker-compose up -d
+2. docker-compose ps
+verificamos el estatus de nuestros servicios
+
+3. Agregamos a nuestro archivo de requerimientos el uso de django (Django==4.0.6)
+4. docker-compose up -d --build
+5. docker-compose exec app bash
+Ingresa al contenedor del servicio app.
+6.django-admin startproject siat .
+Crea una estructura de directorio de proyectos de Django para el nombre del proyecto dado en el directorio actual o el destino dado.
+7.python3 manage.py check
+8.python3 manage.py startapp usuarios
