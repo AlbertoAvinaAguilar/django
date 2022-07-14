@@ -39,6 +39,7 @@ Creamos la aplicación llamada hola de django
 Verifica que las dependencias son las necesarias para el funcionamiento de la app
 
 >python3 manage.py makemigrations
+>python3 manage.py migrate
 
 Comando para la creación de las migraciones definidas en nuestro proyecto
 
