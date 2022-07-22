@@ -46,17 +46,21 @@ Comando para la creación de las migraciones definidas en nuestro proyecto
 >python3 manage.py createsuperuser
 
 Comando que crea el super usuario de la administración de usuarios de django
-C:\Users\ITecnologia\Documents\gitlab\cursojiapaz>docker-compose exec app bash
+C:\Users\ITecnologia\Documents\gitlab\cursojiapaz>
+>docker-compose exec app bash
 root@a52af4cbd1f1:/app# exit
-C:\Users\ITecnologia\Documents\gitlab\cursojiapaz>docker-compose down
+C:\Users\ITecnologia\Documents\gitlab\cursojiapaz>
+>docker-compose down
 
 ------------------------ day 2 --------------------
 pip freeze Checamos con este comando que el proyecto cuente con las dependencias necesarias para funcionar
 
-docker-compose up -d --build Reconstruye todo el proyecto completo, crea los servicios en funcion de las imagenes configuradas
+>docker-compose up -d --build 
+Reconstruye todo el proyecto completo, crea los servicios en funcion de las imagenes configuradas
 -d nos permite que se ejecute en segundo plano nuestro comando
 
-docker-compose exec app bash entra al contenedor de la app
+>docker-compose exec app bash 
+entra al contenedor de la app
 
 C:\Users\ITecnologia\Documents\gitlab\cursojiapaz\padron>docker-compose exec app bash
 root@d6fdd62ed328:/app# pip freeze
