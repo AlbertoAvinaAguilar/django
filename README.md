@@ -76,6 +76,10 @@ El flujo para generar un nuevo modulo es
 url, view funcion, regresas a tu html
 
 
+> docker-compose ps 
+podemos visualizar los procesos que esta utilizando nuestro contenedor
+>docker-compose logs
+>docker-compose logs app
 
 
 
