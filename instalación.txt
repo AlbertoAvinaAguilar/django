@@ -13,3 +13,7 @@ Ingresa al contenedor del servicio app.
 Crea una estructura de directorio de proyectos de Django para el nombre del proyecto dado en el directorio actual o el destino dado.
 7.python3 manage.py check
 8.python3 manage.py startapp usuarios
+
+************* CONEXION BD LOCAL **************
+1. pip install django mssql-django
+2. curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -

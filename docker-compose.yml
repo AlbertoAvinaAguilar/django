@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    container_name: siat
+    container_name: siat2
     #restart: always para producion cuando se caiga o se reinicie el servidor
     depends_on:
       - db
@@ -18,7 +18,7 @@ services:
 
   db:
     image: mariadb
-    container_name: siat-db
+    container_name: siat-db2
     #restart: always
     environment:
       MYSQL_DATABASE: siat

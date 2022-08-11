@@ -4,7 +4,7 @@ FROM debian:bullseye-slim
 #indicamos las dependencias que usa nuestro proyecto de base
 RUN apt-get update
 RUN apt-get install apache2 python3 python3-pip libmariadb-dev \
-    libapache2-mod-wsgi-py3 python-dev openssh-client -y
+    libapache2-mod-wsgi-py3 python-dev openssh-client curl nano -y
 
 # Configure timezone
 ENV TZ=America/Mexico_City

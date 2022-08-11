@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'usuarios',
 ]
 
 MIDDLEWARE = [
@@ -75,10 +76,17 @@ WSGI_APPLICATION = 'siat.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'mssql',
+        'NAME': 'siat',
+        'USER': 'siat',
+        'PASSWORD': 'hola1234',
+        'HOST': '192.168.43.159',
+        'PORT': 49698,
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server','TrustServerCertificate': True,
+        },
     }
-}
+}  
 
 
 # Password validation
