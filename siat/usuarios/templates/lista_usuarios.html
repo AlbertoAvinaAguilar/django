@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Usuarios {% endblock title %}
+
+{% block contenido %} <h1>Aqui ira la lista </h1>
+
+{% for usuario in usuarios %}
+{{usuario.nombre}}
+{{usuario.apellido_paterno}}
+{{usuario.apellido_materno}}
+
+{% endfor %}
+
+{% endblock contenido %}

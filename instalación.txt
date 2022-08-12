@@ -25,5 +25,14 @@ Crea una estructura de directorio de proyectos de Django para el nombre del proy
 8. source ~/.bashrc
 9. nano /etc/ssl/openssl.cnf
 10. MinProtocol = TLSv1.0
+********** PARA LA GENERACION DE MODELS DESDE UNA BASE DE DATOS ****
+1. Modificamos nuestro settings de nuestro proyecto y apuntamos a la base de datos de la cual 
+vamos a extraer las tablas a modelos
+2. despues tecleamos el comando python3 manage inspectdb > models_otros.py
+3. despues creamos las migraciones con make migrations
+4. despues generamos las tablas con migrate
+5. comenzamos con la creacion de las vistas, clases, formularios
+********** 
+
 
 
