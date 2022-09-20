@@ -81,6 +81,23 @@ podemos visualizar los procesos que esta utilizando nuestro contenedor
 >docker-compose logs
 >docker-compose logs app
 
+>NOTAS
+----------- MODELOS.PY -------------------
+En los modelos para definir un campo requerido se utiliza blank ""por default van en requeridos"".
+blank=True significa que para el formulario no es obligatorio ese campo
+null=True indica que se pueden guardar valores nulos en la base de datos
+
+Cuando un campo es autoincremental se designa en el modelo como AutoField al campo que vamos a aplicar.
+ejemplo models.AutoField()
+
+---------- SETTINGS.PY -------------------
+Para los mensajes de los fields se modifica el lenguaje a MEXICO 
+LANGUAGE_CODE = 'es-mx' 
+
+
+
+
+
 
 
 
