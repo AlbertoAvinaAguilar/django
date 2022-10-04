@@ -80,7 +80,18 @@ DATABASES = {
         'NAME': 'siat',
         'USER': 'siat',
         'PASSWORD': 'hola1234',
-        'HOST': '192.168.43.159',
+        'HOST': '10.45.16.11',
+        'PORT': 49698,
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server','TrustServerCertificate': True,
+        },
+    },
+    'trabajadores': {
+        'ENGINE': 'mssql',
+        'NAME': 'trabajadores',
+        'USER': 'siat',
+        'PASSWORD': 'hola1234',
+        'HOST': '10.45.16.11',
         'PORT': 49698,
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server','TrustServerCertificate': True,
