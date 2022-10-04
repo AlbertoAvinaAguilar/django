@@ -94,6 +94,13 @@ ejemplo models.AutoField()
 Para los mensajes de los fields se modifica el lenguaje a MEXICO 
 LANGUAGE_CODE = 'es-mx' 
 
+----- USO DE MULTIPLES BASE DE DATOS ------------
+1. Primero realizar la configuración de las dos bases de datos en setting.py para indicar la bd de default y la otra que vamos a usar
+2. Se crea el modelo que se va implementar para la tabla de la base de datos no default
+3. En views implementamos departamentos = Departamento.objects.all().using('trabajadores') donde con using indicamos que base de datos vamos a emplear
+4. Imprimimos lo del queryset en html
+
+
 
 
 
