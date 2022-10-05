@@ -100,6 +100,17 @@ LANGUAGE_CODE = 'es-mx'
 3. En views implementamos departamentos = Departamento.objects.all().using('trabajadores') donde con using indicamos que base de datos vamos a emplear
 4. Imprimimos lo del queryset en html
 
+---- USO DE INSPECTDB ------------
+Obtener catalogo de otra base de datos y almacenar el id en una distinta tabla de otra base de datos
+python3 manage.py inspectdb  > models_otros.py
+python3 manage.py inspectdb --database="servidor41" > models_otros.py apuntando a otra base de datos
+2. Se crea el modelo aunque no se corran las migraciones es para establecer la estructura de los campos que vamos a tratar 
+3. en views obtenemos la informacion de la otra base de datos importando el modelo y haciendo uso de queryset
+departamentos = Departamento.objects.all().using('trabajadores') Especificamos la otra base de datos que vamos a utilizar
+4. en el html creamos manualmente nuestro select
+5. en views seteamos el valor antes del save para almacenar el id del select manual
+
+
 
 
 
