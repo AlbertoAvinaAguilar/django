@@ -5,7 +5,7 @@ class FormUsuario(forms.ModelForm):          #El nombre de la clase es el nombre
     class Meta:                              #La clase Meta indica que modelo vamos a usar para crear el formulario 
         model = Usuarios
         fields = '__all__'                   #Indicamos que campos estan presentes en nuestro formulario por ejemplo podrian ser solo '('nombre','apellido_paterno')'
-        #exclude = ['iduser']                 #all incluye todos los campos, exclude solo no muestra los que tengamos en esa parte  
+        exclude = ['departamento']                 #all incluye todos los campos, exclude solo no muestra los que tengamos en esa parte  
         
         widgets = {                          #Representacion de los elementos de html mediante forms con las clases de campos incorporados
             'iduser':forms.NumberInput(attrs={'class':'form-control'}),
